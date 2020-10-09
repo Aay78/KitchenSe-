@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="Author" content="Ayush Singh">
+        <meta name="Description" content="Homemade Indian food delievred to your house/work">
+        <title>KitchenSe</title>
+        <style>
+            h1{
+                color:black;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight:bold;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: black;
+            }
+            .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color:red;
+            position: fixed;
+            height: 100%;
+            overflow: auto
+            }
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+            }
+            .sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }          
+     }  
+     body{
+         background-image: url("India.jpg");
+         background-size: cover;
+     }
+        </style>
+
+<link rel="Icon" href="logo.png" type="images/x-icon" sizes="32x32">
+<body>
+
+    <h1>About KitchenSe</h1>
+    <div class="sidebar">
+            <a class="Active" href="KitchenSe.html">Home</a>
+            <a href="Nonv.html">Nonveg</a>
+            <a href="Veg.html">Veg</a>
+            <a href="About.html">About</a>
+        </div>
+        
+</body>
